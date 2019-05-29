@@ -1,0 +1,26 @@
+{  
+  "id": "fdd46550-8d10-4404-90e2-1397855c33df",
+  "publisher": "Sikich, llp",
+  "name": "Canon Medical Research USA",  
+  "version": "1.0.0.0",  
+  "privacyStatement": "http://www.sikich.com/about/privacy",
+  "EULA": "",
+  "url": "http://www.sikichtech.com/",
+  "logo": "./Images/Sikich255x115.png",  
+  "brief": "",
+  "description": "",
+  "help": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRange": 
+    {
+      "from": 50000,
+      "to": 51000
+    }
+  ,
+  "runtime": "3.0",
+  "showMyCode": true
+}
