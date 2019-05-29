@@ -162,7 +162,7 @@ Report 50000 "Check (Check/Stub/Stub)2"
                 dataitem(PrintSettledLoop; "Integer")
                 {
                     DataItemTableView = sorting (Number);
-                    MaxIteration = 10;
+                    MaxIteration = 5;
                     column(ReportForNavId_4098; 4098)
                     {
                     }
