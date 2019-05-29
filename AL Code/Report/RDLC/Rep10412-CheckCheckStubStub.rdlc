@@ -2087,7 +2087,6 @@
                       <Value>=Cstr(Choose(75,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
-                        <Format>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(Choose(111, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
