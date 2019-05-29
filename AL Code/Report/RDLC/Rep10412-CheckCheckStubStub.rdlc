@@ -616,25 +616,25 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.49389in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.94488in</Width>
+                  <Width>2.02643in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.90551in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.00394in</Width>
+                  <Width>1.18588in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.94322in</Width>
+                  <Width>1.18779in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.03052in</Width>
+                  <Width>1.4476in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -732,15 +732,14 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <BackgroundColor>White</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>0.04134in</PaddingLeft>
-                            <PaddingRight>0.04134in</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -1172,14 +1171,14 @@
               </Filter>
             </Filters>
             <Height>0.19779in</Height>
-            <Width>6.82807in</Width>
+            <Width>8.24711in</Width>
             <Style />
           </Tablix>
         </ReportItems>
         <Height>0.23806in</Height>
         <Style />
       </Body>
-      <Width>10.60292in</Width>
+      <Width>8.4449in</Width>
       <Page>
         <PageHeader>
           <Height>4.04014in</Height>
