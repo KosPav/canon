@@ -851,8 +851,7 @@
                                 <TextRun>
                                   <Value>=Cstr(Last(Fields!CheckToAddr_1_.Value)) + Chr(177)
  + Cstr(Last(Fields!CheckDateText.Value)) + Chr(177)
- + Cstr(Last(Fields!CheckNoTextCaption.Value)) + Chr(177)
- + Cstr(Last(Fields!CheckNoText.Value))</Value>
+ + Cstr(Last(Fields!CheckNoTextCaption.Value))</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Color>Red</Color>
@@ -1184,7 +1183,7 @@
               </Filter>
             </Filters>
             <Height>0.19779in</Height>
-            <Width>8.24711in</Width>
+            <Width>8.2471in</Width>
             <Style />
           </Tablix>
         </ReportItems>
