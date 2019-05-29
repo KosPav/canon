@@ -849,9 +849,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Cstr(Last(Fields!CheckToAddr_1_.Value)) + Chr(177)
- + Cstr(Last(Fields!CheckDateText.Value)) + Chr(177)
- + Cstr(Last(Fields!CheckNoTextCaption.Value))</Value>
+                                  <Value EvaluationMode="Constant" />
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Color>Red</Color>
@@ -2034,7 +2032,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Cstr(Choose(115,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Cdec(Cstr(Choose(115,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177)))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Format>=Cstr(Choose(116,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
