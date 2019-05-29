@@ -1029,7 +1029,9 @@
  + Cstr(Last(Fields!TotalLineAmountFormat.Value)) + Chr(177)
  + Cstr(Last(Fields!Stub2LineAmount_1____Stub2LineDiscount_1_Format.Value)) + Chr(177)
  + Cstr(Last(Fields!Stub2LineDiscount_1_Format.Value)) + Chr(177)
- + Cstr(Last(Fields!Stub2LineAmount_1_Format.Value))</Value>
+ + Cstr(Last(Fields!Stub2LineAmount_1_Format.Value)) + Chr(177)
+ + Cstr(Sum(Fields!LineDiscount.Value)) + Chr(177)
+ + Cstr(Last(Fields!LineDiscountFormat.Value))</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Color>Red</Color>
@@ -1232,6 +1234,7 @@
                       <Value>=Cstr(Choose(80,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
+                        <Format>MM/dd/yyyy</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -2032,10 +2035,10 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.CDec(Choose(74, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Cstr(Choose(115,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
-                        <Format>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(Choose(111, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
+                        <Format>=Cstr(Choose(116,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -2045,9 +2048,9 @@
                 </Paragraph>
               </Paragraphs>
               <Top>0.0014in</Top>
-              <Left>5.31857in</Left>
+              <Left>5.49565in</Left>
               <Height>0.16567in</Height>
-              <Width>1.54031in</Width>
+              <Width>1.36323in</Width>
               <ZIndex>1</ZIndex>
               <Style />
             </Textbox>
@@ -2057,22 +2060,21 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.CDec(Choose(74, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Cstr(Choose(101,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
-                        <Format>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(Choose(111, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Left</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
               <Top>0.0014in</Top>
               <Left>3.47032in</Left>
               <Height>0.16567in</Height>
-              <Width>1.84825in</Width>
+              <Width>2.02533in</Width>
               <ZIndex>2</ZIndex>
               <Style />
             </Textbox>
@@ -2082,7 +2084,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.CDec(Choose(74, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Cstr(Choose(75,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Format>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(Choose(111, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
@@ -2090,7 +2092,7 @@
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Left</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
@@ -2099,6 +2101,9 @@
               <Height>0.16567in</Height>
               <Width>1.06905in</Width>
               <ZIndex>3</ZIndex>
+              <Visibility>
+                <Hidden>=iif(ReportItems!CheckStyle.Value = 0, true, false)</Hidden>
+              </Visibility>
               <Style />
             </Textbox>
             <Textbox Name="textbox84">
@@ -2107,15 +2112,15 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.CDec(Choose(74, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Cstr(Choose(80,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
-                        <Format>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(Choose(111, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
+                        <Format>MM/dd/yyyy</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Left</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
@@ -2131,15 +2136,15 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.CDec(Choose(74, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>TOBEXTW</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
-                        <Format>=Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(Choose(111, Split(Microsoft.ReportingServices.RdlObjectModel.ExpressionParser.VBFunctions.Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
+                        <Color>LimeGreen</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Left</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
