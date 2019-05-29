@@ -732,7 +732,6 @@
                                   <Value>=Fields!DocDate.Value</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
-                                    <Format>MM/dd/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1028,7 +1027,7 @@
  + Cstr(Last(Fields!Stub2LineDiscount_1_Format.Value)) + Chr(177)
  + Cstr(Last(Fields!Stub2LineAmount_1_Format.Value)) + Chr(177)
  + Cstr(Sum(Fields!LineDiscount.Value)) + Chr(177)
- + Cstr(Last(Fields!LineDiscountFormat.Value))</Value>
+ + Cstr(Last(Fields!PostingDate.Value))</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Color>Red</Color>
@@ -1228,7 +1227,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Cstr(Choose(80,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Cstr(Choose(116,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Format>MM/dd/yyyy</Format>
@@ -2054,7 +2053,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Cstr(Choose(80,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Cstr(Choose(116,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Format>MM/dd/yyyy</Format>

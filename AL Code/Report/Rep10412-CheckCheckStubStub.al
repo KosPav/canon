@@ -132,6 +132,9 @@ Report 50000 "Check (Check/Stub/Stub)2"
             column(GenJnlLine_Line_No_; "Line No.")
             {
             }
+            column(PostingDate; Format("Posting Date", 0, '<Month,2>/<Day,2>/<Year4>'))
+            {
+            }
             dataitem(CheckPages; "Integer")
             {
                 DataItemTableView = sorting (Number);
@@ -184,7 +187,7 @@ Report 50000 "Check (Check/Stub/Stub)2"
                     column(DocNo; DocNo)
                     {
                     }
-                    column(DocDate; DocDate)
+                    column(DocDate; Format(DocDate, 0, '<Month,2>/<Day,2>/<Year4>'))
                     {
                     }
                     column(PostingDesc; PostingDesc)
