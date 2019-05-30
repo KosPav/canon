@@ -162,7 +162,7 @@ Report 50000 "Check (Check/Stub/Stub)2"
                 dataitem(PrintSettledLoop; "Integer")
                 {
                     DataItemTableView = sorting (Number);
-                    MaxIteration = 5;
+                    MaxIteration = 30;
                     column(ReportForNavId_4098; 4098)
                     {
                     }
@@ -447,6 +447,11 @@ Report 50000 "Check (Check/Stub/Stub)2"
                     {
                     }
                     column(TotalLineAmount; TotalLineAmount)
+                    {
+                        AutoFormatExpression = GenJnlLine."Currency Code";
+                        AutoFormatType = 1;
+                    }
+                    column(TotalLineDiscount; TotalLineDiscount)
                     {
                         AutoFormatExpression = GenJnlLine."Currency Code";
                         AutoFormatType = 1;

@@ -428,8 +428,9 @@
  + Cstr(Last(Fields!Stub2LineAmount_1____Stub2LineDiscount_1_Format.Value)) + Chr(177)
  + Cstr(Last(Fields!Stub2LineDiscount_1_Format.Value)) + Chr(177)
  + Cstr(Last(Fields!Stub2LineAmount_1_Format.Value)) + Chr(177)
- + Cstr(Sum(Fields!LineDiscount.Value),"Table1") + Chr(177)
- + Cstr(Last(Fields!PostingDate.Value))</Value>
+ + Cstr(Last(Fields!TotalLineDiscount.Value)) + Chr(177)
+ + Cstr(Last(Fields!PostingDate.Value)) + Chr(177)
+ + Cstr(Last(Fields!TotalLineDiscountFormat.Value))</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Color>Red</Color>
@@ -1555,7 +1556,7 @@
                       <Value>=CDec(Choose(115,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
-                        <Format>=Cstr(Choose(111,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
+                        <Format>=Cstr(Choose(117,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1787,6 +1788,12 @@ End Function
         </Field>
         <Field Name="TotalLineAmountFormat">
           <DataField>TotalLineAmountFormat</DataField>
+        </Field>
+        <Field Name="TotalLineDiscount">
+          <DataField>TotalLineDiscount</DataField>
+        </Field>
+        <Field Name="TotalLineDiscountFormat">
+          <DataField>TotalLineDiscountFormat</DataField>
         </Field>
         <Field Name="TotalText">
           <DataField>TotalText</DataField>
